@@ -2,7 +2,9 @@ import React from 'react';
 import Home from '@/app/home';
 
 const getMovies = async () => {
-   const data = await fetch('http://localhost:3000/data.json', { cache: 'no-store' });
+   const data = await fetch('https://movies-test-app-2oo1.vercel.app/data.json', {
+      cache: 'no-store',
+   });
    return data.json();
 };
 
