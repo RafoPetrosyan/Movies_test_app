@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '@/app/home';
 
 const getMovies = async () => {
-   const data = await fetch('http://localhost:3000/data.json');
+   const data = await fetch('http://localhost:3000/data.json', { cache: 'no-store' });
    return data.json();
 };
 
