@@ -7,13 +7,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -25,3 +18,22 @@ body {
     text-wrap: balance;
   }
 }
+
+.swiper-slide {
+  width: fit-content!important;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg,
+  #040404 0.00%,
+  rgba(4,4,4,0.98 ) 20.63%,
+  rgba(4,4,4,0 ) 100.00%);
+}
+
+.menu-gradient-bg {
+  background: linear-gradient(to right,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(0, 0, 0, 0.8) calc(100% - 10px),
+  rgba(0, 0, 0, 0.6) 100%);
+}
+
